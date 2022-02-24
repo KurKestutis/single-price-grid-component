@@ -1,0 +1,52 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: #e5eff5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.advert {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 30rem;
+}
+
+.advert__head {
+  background-color: white;
+}
+
+.advert__offer {
+  background-color: #2ab2af;
+}
+
+.advert__offer__price__number {
+  font-size: 2rem;
+}
+
+.advert__info {
+  background-color: #76c6ce;
+}
+
+.footer {
+  padding: 0.5rem 1rem;
+  font-size: 11px;
+  text-align: center;
+
+  margin-top: auto;
+}
+
+.footer a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

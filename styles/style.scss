@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$cyan: hsl(179, 62%, 43%);
+$brightYellow: hsl(71, 73%, 54%);
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+
+.main {
+  background-color: $lightGray;
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translate(0, -50%);
+  //   margin: auto 0;
+  //   display: flex;
+  //   justify-content: center;
+}
+
+.advert {
+  width: 50rem;
+
+  margin: 0 auto;
+}
+
+.advert__head {
+  background-color: rgb(255, 255, 255);
+}
+
+.advert__offer {
+  background-color: $cyan;
+  &__price {
+    &__number {
+      font-size: 2rem;
+    }
+  }
+}
+
+.advert__info {
+  background-color: rgb(118, 198, 206);
+}
+
+.footer {
+  text-align: end;
+  padding: 0.5rem 1rem;
+  //   justify-self: baseline;
+  font-size: 11px;
+  text-align: center;
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}
