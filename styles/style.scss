@@ -10,19 +10,19 @@ $lightGray: hsl(204, 43%, 93%);
 $grayishBlue: hsl(218, 22%, 67%);
 
 .main {
+  position: relative;
   background-color: $lightGray;
-  //   position: absolute;
-  //   top: 50%;
-  //   transform: translate(0, -50%);
-  //   margin: auto 0;
-  //   display: flex;
-  //   justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .advert {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 50rem;
-
-  margin: 0 auto;
 }
 
 .advert__head {
@@ -43,11 +43,11 @@ $grayishBlue: hsl(218, 22%, 67%);
 }
 
 .footer {
-  text-align: end;
   padding: 0.5rem 1rem;
-  //   justify-self: baseline;
   font-size: 11px;
+  margin-top: auto;
   text-align: center;
+
   & a {
     color: hsl(228, 45%, 44%);
   }
