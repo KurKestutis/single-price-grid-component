@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: Karla;
+  src: url(https://fonts.google.com/specimen/Karla);
+}
+
 .main {
   position: relative;
   background-color: #e5eff5;
@@ -50,33 +55,87 @@
 .advert__head__header__title {
   color: #2ab2af;
   padding-bottom: 1rem;
-  font-weight: 700;
 }
 
 .advert__head__slogan {
   color: #c0df34;
-  font-weight: 700;
   font-size: 16px;
   padding-bottom: 1rem;
 }
 
 .advert__head__info {
   color: #98a6bd;
-  font-weight: 400;
   line-height: 1.8rem;
 }
 
+.advert > :nth-child(n + 2) {
+  color: #e5eff5;
+}
+
 .advert__offer {
+  color: #e5eff5;
   background-color: #2ab2af;
   border-radius: 0 0 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.advert__offer__header {
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.advert__offer__price {
+  color: #98a6bd;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .advert__offer__price__number {
+  color: #e5eff5;
   font-size: 2rem;
+  font-weight: 700;
+  padding-right: 1rem;
+}
+
+.advert__offer__info {
+  padding: 1rem 0 2rem 0;
+}
+
+.advert__offer__button {
+  color: #e5eff5;
+  font-weight: 700;
+  background-color: #c0df34;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.2rem;
+  border: 0;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.advert__offer__button:hover {
+  border: solid 1px;
+  color: black;
+}
+
+.advert__offer__button:active {
+  background-color: #f6aa2f;
+  color: #e5eff5;
 }
 
 .advert__info {
-  background-color: #76c6ce;
+  background-color: rgba(42, 178, 175, 0.75);
   border-radius: 0 0 0.5rem 0;
 }
 

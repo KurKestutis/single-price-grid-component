@@ -4,7 +4,13 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: Karla;
+  src: url(https://fonts.google.com/specimen/Karla);
+}
+
 $cyan: hsl(179, 62%, 43%);
+$cyanLighter: hsla(179, 62%, 43%, 0.75);
 $brightYellow: hsl(71, 73%, 54%);
 $lightGray: hsl(204, 43%, 93%);
 $grayishBlue: hsl(218, 22%, 67%);
@@ -46,36 +52,79 @@ $doublePading: 2 * $mainPading;
     &__header__title {
       color: $cyan;
       padding-bottom: $mainPading;
-      font-weight: 700;
     }
 
     &__slogan {
       color: $brightYellow;
-      font-weight: 700;
       font-size: 16px;
       padding-bottom: $mainPading;
     }
 
     &__info {
       color: $grayishBlue;
-      font-weight: 400;
       line-height: 1.8rem;
     }
   }
 
+  & > :nth-child(n + 2) {
+    color: $lightGray;
+  }
+
   &__offer {
+    color: $lightGray;
     background-color: $cyan;
     border-radius: 0 0 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+      font-weight: 700;
+      padding-bottom: $mainPading;
+    }
 
     &__price {
+      color: $grayishBlue;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+
       &__number {
+        color: $lightGray;
         font-size: 2rem;
+        font-weight: 700;
+        padding-right: $mainPading;
+      }
+    }
+
+    &__info {
+      padding: $mainPading 0 $doublePading 0;
+    }
+
+    &__button {
+      color: $lightGray;
+      font-weight: 700;
+      background-color: $brightYellow;
+      width: 100%;
+      height: 3rem;
+      border-radius: 0.2rem;
+      border: 0;
+      margin-top: auto;
+      cursor: pointer;
+
+      &:hover {
+        border: solid 1px;
+        color: black;
+      }
+
+      &:active {
+        background-color: rgb(246, 170, 47);
+        color: $lightGray;
       }
     }
   }
 
   &__info {
-    background-color: rgb(118, 198, 206);
+    background-color: $cyanLighter;
     border-radius: 0 0 0.5rem 0;
   }
 }
@@ -120,6 +169,7 @@ $doublePading: 2 * $mainPading;
   .main {
     background-color: rgb(231, 98, 191);
   }
+
   .advert {
     width: 20rem;
   }
