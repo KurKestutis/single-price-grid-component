@@ -9,6 +9,9 @@ $brightYellow: hsl(71, 73%, 54%);
 $lightGray: hsl(204, 43%, 93%);
 $grayishBlue: hsl(218, 22%, 67%);
 
+$mainPading: 1rem;
+$doublePading: 2 * $mainPading;
+
 .main {
   position: relative;
   background-color: $lightGray;
@@ -23,23 +26,37 @@ $grayishBlue: hsl(218, 22%, 67%);
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50rem;
-}
+  font-family: "Karla", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 
-.advert__head {
-  background-color: rgb(255, 255, 255);
-}
+  & > * {
+    padding: $doublePading;
+  }
 
-.advert__offer {
-  background-color: $cyan;
-  &__price {
-    &__number {
-      font-size: 2rem;
+  & > :nth-child(n + 2) {
+    width: 50%;
+  }
+
+  &__head {
+    background-color: rgb(255, 255, 255);
+    &__header__title {
+      color: $cyan;
     }
   }
-}
 
-.advert__info {
-  background-color: rgb(118, 198, 206);
+  &__offer {
+    background-color: $cyan;
+    &__price {
+      &__number {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__info {
+    background-color: rgb(118, 198, 206);
+  }
 }
 
 .footer {
@@ -50,5 +67,28 @@ $grayishBlue: hsl(218, 22%, 67%);
 
   & a {
     color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (max-width: 1100px) {
+  .main {
+    background-color: green;
+  }
+  .advert {
+    width: 30rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    & > :nth-child(n + 1) {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    background-color: rgb(231, 98, 191);
+  }
+  .advert {
+    width: 20rem;
   }
 }
