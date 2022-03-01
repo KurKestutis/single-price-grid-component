@@ -24,7 +24,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 50rem;
+  width: 38rem;
   font-family: "Karla", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,15 +42,33 @@
 }
 
 .advert__head {
+  line-height: 1.5rem;
   background-color: white;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .advert__head__header__title {
   color: #2ab2af;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+.advert__head__slogan {
+  color: #c0df34;
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 1rem;
+}
+
+.advert__head__info {
+  color: #98a6bd;
+  font-weight: 400;
+  line-height: 1.8rem;
 }
 
 .advert__offer {
   background-color: #2ab2af;
+  border-radius: 0 0 0 0.5rem;
 }
 
 .advert__offer__price__number {
@@ -59,6 +77,7 @@
 
 .advert__info {
   background-color: #76c6ce;
+  border-radius: 0 0 0.5rem 0;
 }
 
 .footer {
@@ -77,7 +96,7 @@
     background-color: green;
   }
   .advert {
-    width: 30rem;
+    width: 25rem;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-orient: vertical;
@@ -87,6 +106,13 @@
   }
   .advert > :nth-child(n + 1) {
     width: 100%;
+  }
+  .advert__offer {
+    background-color: #2ab2af;
+    border-radius: 0;
+  }
+  .advert__info {
+    border-radius: 0 0 0.5rem 0.5rem;
   }
 }
 
