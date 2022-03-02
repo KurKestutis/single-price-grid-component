@@ -166,9 +166,6 @@
 }
 
 @media (max-width: 1100px) {
-  .main {
-    background-color: green;
-  }
   .advert {
     width: 25rem;
     -ms-flex-wrap: nowrap;
@@ -178,8 +175,14 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .advert > * {
+    padding: 1rem;
+  }
   .advert > :nth-child(n + 1) {
     width: 100%;
+  }
+  .advert__head {
+    padding-top: 2rem;
   }
   .advert__offer {
     background-color: #2ab2af;
@@ -191,9 +194,6 @@
 }
 
 @media (max-width: 500px) {
-  .main {
-    background-color: #e762bf;
-  }
   .advert {
     width: 20rem;
   }
