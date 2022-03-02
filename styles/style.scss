@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: Karla;
-  src: url(https://fonts.google.com/specimen/Karla);
-}
-
 $cyan: hsl(179, 62%, 43%);
 $cyanLighter: hsla(179, 62%, 43%, 0.75);
 $brightYellow: hsl(71, 73%, 54%);
@@ -136,7 +131,7 @@ $spacing-double: 2 * $spacing-base;
 
     &__text {
       list-style-type: none;
-      line-height: 1.6rem;
+      line-height: 1.4rem;
     }
 
     & li {
@@ -188,5 +183,8 @@ $spacing-double: 2 * $spacing-base;
 @media (max-width: 500px) {
   .advert {
     width: 20rem;
+  }
+  .footer {
+    padding-top: 50rem;
   }
 }
