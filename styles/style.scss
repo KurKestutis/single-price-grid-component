@@ -16,6 +16,7 @@ $lightGray: hsl(204, 43%, 93%);
 $grayishBlue: hsl(218, 22%, 67%);
 
 $mainPading: 1rem;
+$halfPading: $mainPading/2;
 $doublePading: 2 * $mainPading;
 
 .main {
@@ -83,16 +84,18 @@ $doublePading: 2 * $mainPading;
     }
 
     &__price {
-      color: $grayishBlue;
       font-weight: 700;
       display: flex;
       align-items: center;
 
       &__number {
-        color: $lightGray;
         font-size: 2rem;
         font-weight: 700;
         padding-right: $mainPading;
+      }
+
+      &__unit {
+        opacity: 0.6;
       }
     }
 
@@ -126,6 +129,19 @@ $doublePading: 2 * $mainPading;
   &__info {
     background-color: $cyanLighter;
     border-radius: 0 0 0.5rem 0;
+
+    &__header {
+      padding-bottom: $mainPading;
+    }
+
+    &__text {
+      list-style-type: none;
+      line-height: 1.6rem;
+    }
+
+    & li {
+      opacity: 0.8;
+    }
   }
 }
 

@@ -91,7 +91,6 @@
 }
 
 .advert__offer__price {
-  color: #98a6bd;
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,10 +101,13 @@
 }
 
 .advert__offer__price__number {
-  color: #e5eff5;
   font-size: 2rem;
   font-weight: 700;
   padding-right: 1rem;
+}
+
+.advert__offer__price__unit {
+  opacity: 0.6;
 }
 
 .advert__offer__info {
@@ -137,6 +139,19 @@
 .advert__info {
   background-color: rgba(42, 178, 175, 0.75);
   border-radius: 0 0 0.5rem 0;
+}
+
+.advert__info__header {
+  padding-bottom: 1rem;
+}
+
+.advert__info__text {
+  list-style-type: none;
+  line-height: 1.6rem;
+}
+
+.advert__info li {
+  opacity: 0.8;
 }
 
 .footer {
