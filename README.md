@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/KurKestutis/single-price-grid-component)
-- Live Site URL: [Add live site URL here](https://kurkestutis.github.io/single-price-grid-component/)
+- [Solution URL](https://github.com/KurKestutis/single-price-grid-component)
+- [Live Site URL](https://kurkestutis.github.io/single-price-grid-component/)
 
 ## My process
 
