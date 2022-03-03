@@ -14,7 +14,7 @@ $spacing-base: 1rem;
 $spacing-half: $spacing-base/2;
 $spacing-double: 2 * $spacing-base;
 
-.main {
+.body {
   position: relative;
   background-color: $lightGray;
   min-height: 100vh;
@@ -46,6 +46,7 @@ $spacing-double: 2 * $spacing-base;
     border-radius: 0.5rem 0.5rem 0 0;
 
     &__header__title {
+      font-size: 24px;
       color: $cyan;
       padding-bottom: $spacing-base;
     }

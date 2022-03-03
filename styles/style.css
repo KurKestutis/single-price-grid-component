@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.main {
+.body {
   position: relative;
   background-color: #e5eff5;
   min-height: 100vh;
@@ -48,6 +48,7 @@
 }
 
 .advert__head__header__title {
+  font-size: 24px;
   color: #2ab2af;
   padding-bottom: 1rem;
 }
